@@ -27,5 +27,3 @@
 ### Schéma de Navigation (SN)
 
 ### Schéma Conceptuel des Traitements (SCT)
-
-
