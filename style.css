@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:rgb(222, 218, 218);
+    font-family: sans-serif;
+    font-family: 'Press Start 2P', cursive;
+}
+header {
+    position: fixed;
+    width: 100%;
+    height: 9vh;
+    top:0;
+    left: 0;
+    background-color: black;
+    padding: 0 2rem;
+    color: #fff;
+    z-index: 100;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.menu li{
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.menu li::before{
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -2px; /*-12*/
+    transition: 0.4s ease-out;
+}
+.menu li:hover::before{
+    width: 100%;
+}
+ul li ul.dropdown li {
+    display: block;
+    padding: 7px 0px;
+}
+ul li ul.dropdown {
+    width: 120%;
+    height: 120px;
+    padding: 0px 0px;
+    background: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+.toggle {
+    display: none;
+}
+.title {
+    margin-top: 6rem;
+    text-align: center;
+    height: auto;
+    padding: 40px;
+    font-size: 12px;
+}
+/* .title h1 {
+    font-size: xx-large;
+} */
+#container-intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+ }
+
+ #container-intro p {
+     font-size: 18px;
+ }
+ 
+@media all and (max-width: 991px){
+    .toggle{
+        display: block;
+        color: white;
+        font-size: 30px; 
+        position: relative; 
+        z-index: 20;
+}
+/* .logo {
+    position: relative;
+    z-index: 20;
+} */
+.ouvrir {
+    display: block;
+}
+.fermer {
+    display: none;
+}
+
+.open .ouvrir {
+    display: none;
+}
+.open .fermer {
+    display: block;
+}
+.menu {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem ;
+    transform: translateX(-100%);
+    transition: 2s;
+}
+.menu li {
+    font-size: 22px;
+}
+.menu li::before {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+.open .menu {
+    transform: translateX(0);
+}
+}
