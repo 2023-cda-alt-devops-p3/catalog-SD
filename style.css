@@ -74,20 +74,21 @@ ul li:hover ul.dropdown {
     padding: 40px;
     font-size: 12px;
 }
-/* .title h1 {
-    font-size: xx-large;
-} */
-#container-intro {
+.container-text {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 50px;
+    padding: 0px 20px;
  }
-
  #container-intro p {
      font-size: 18px;
  }
- 
+ .photo-text{
+    margin-left: 10px;
+    width: 400px;
+    height: auto;
+ }
 @media all and (max-width: 991px){
     .toggle{
         display: block;
