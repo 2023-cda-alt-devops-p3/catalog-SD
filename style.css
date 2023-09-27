@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+  }
 body {
     background-color:rgb(222, 218, 218);
     font-family: sans-serif;
@@ -70,9 +74,9 @@ ul li:hover ul.dropdown {
 .logo-simplon {
     width: 35px;
 }
-#Accueil {
+/* #Accueil {
     height: 100vh;
-}
+} */
 .title {
     margin-top: 6rem;
     text-align: center;
@@ -84,6 +88,10 @@ h1 {
 }
 .title-section {
     margin-left: 65px;
+    margin-top: 60px;
+}
+.fond-color {
+    background-color: goldenrod;
 }
 .container-text {
     display: flex;
@@ -187,7 +195,7 @@ footer a:hover {
     gap: 20px;
 }
 .photo-text {
-    width: 250px;
+    width: 100%;
 }
 .title {
     margin-top: 3rem;
@@ -201,6 +209,7 @@ footer a:hover {
 .title-section {
     margin-left: 0px;
     padding: 0px 65px;
+    /* margin-top: 190px */
 }
 #container-intro p {
     font-size: 16px;
