@@ -93,6 +93,24 @@ h1 {
 .fond-color {
     background-color: goldenrod;
 }
+.container-button {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    background-color:darkgoldenrod;
+    text-decoration: none;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid darkgreen;
+    margin-top: 20px;
+
+}
+button a {
+    text-decoration: none;
+    color: white;
+}
 .container-text {
     display: flex;
     justify-content: space-between;
@@ -111,6 +129,9 @@ h1 {
     margin-left: 10px;
     width: 350px;
     height: auto;
+    border-radius: 10px;
+    border: 1.5px solid rgb(196, 162, 9);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2)
  }
  footer {
     width: 100%;
