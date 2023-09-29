@@ -47,11 +47,17 @@
         <div class="container-text">
             <div class="text">
             <h3>Diagramme de classe</h3>
-            <p>Ce type d’exemples de diagrammes UML est souvent appelé le fondement principal de toute solution orientée objet. Son utilisation est pour la modélisation conceptuelle de la structure réelle du système et la modélisation détaillée. Il est également possible avec les diagrammes de classes de faire de la modélisation des données.
+            <p>Le diagramme de classes est un schéma utilisé en génie logiciel pour présenter les classes et les interfaces des systèmes ainsi que leurs relations. Ce diagramme fait partie de la partie statique d'UML, ne s'intéressant pas aux aspects temporels et dynamiques.
 
-                Dans ce diagramme, les classes sont divisées en trois compartiments contenus dans une boîte. Le nom doit être en haut, suivi des attributs au milieu et des opérations en bas.</p>
+                Une classe décrit les responsabilités, le comportement et le type d'un ensemble d'objets. Les éléments de cet ensemble sont les instances de la classe.
+                
+                Une classe est un ensemble de fonctions et de données (attributs) qui sont liées ensemble par un champ sémantique. Les classes sont utilisées dans la programmation orientée objet. Elles permettent de modéliser un programme et ainsi de découper une tâche complexe en plusieurs petits travaux simples.
+                
+                Les classes peuvent être reliées grâce au mécanisme d'héritage qui permet de mettre en évidence des relations de parenté. D'autres relations sont possibles entre des classes, représentées par un arc spécifique dans le diagramme de classes.
+                
+                Elles sont finalement instanciées pour créer des objets (une classe est un moule à objet : elle décrit les caractéristiques des objets, les objets contiennent leurs valeurs propres pour chacune de ces caractéristiques lorsqu'ils sont instanciés)</p>
             </div>
-                <img class="photo-text" src="img/DC.png" alt="Diagramme-classe">
+                <img class="photo-text" src="img/Class-Diagram-ATM-system-750x660.png" alt="Diagramme-classe">
         </div>
         <div class="container-text">
             <div class="text">
@@ -70,7 +76,7 @@
                 Les cas d'utilisation des diagrammes d’objets ne se limitent pas aux services bancaires. Vous pouvez facilement réaliser un diagramme d’objets pour des arbres généalogiques, les services d'une entreprise ou tout autre système dont les parties sont reliées les unes aux autres.
             </p>
             <button>
-            <a href="elements-diagramme-objet.html" target="_blank">Éléments du diagramme d'objets</a>
+            <a href="elements-diagramme-objet.html">Éléments du diagramme d'objets</a>
         </button>
         </div>
             </div>
@@ -136,46 +142,75 @@
         <h1 class="title-section"> <span class="fond-color">Diagramme comportementaux </h1></span>
         <div class="container-text">
             <div class="text">
-            <h3>Diagramme de classe</h3>
-            <p>Les diagrammes d’activité UML forment un sous-ensemble essentiel des diagrammes de comportement. Ils présentent le fonctionnement de différentes activités et des flux dans les processus métier et les systèmes logiciels. Grâce à des symboles UML spécifiques, vous pouvez représenter le point de départ, le point d’arrivée, ainsi que toutes les fusions et interactions de votre flux de processus. Un grand nombre des activités que les gens souhaitent accomplir en ligne – vérifier leurs e-mails, gérer leur argent, commander des vêtements, etc. – exigent de se connecter à un site web. Ce diagramme d'activités montre le processus de connexion à un site web, de la saisie d'un nom d'utilisateur et d'un mot de passe à la connexion établie au système. Il utilise différentes formes de conteneurs pour les activités, les décisions et les notes.</p>
+            <h3>Diagramme de cas d'utilisation</h3>
+            <p>Est utilisé pour décrire les interactions entre un système et ses acteurs externes. Dans ce contexte, un "acteur" est toute entité qui interagit avec le système, telle qu'un utilisateur, un autre système ou même un dispositif externe. Les diagrammes de cas d'utilisation se concentrent sur ce que fait un système sans se soucier de la manière dont il le fait en interne.
+
+                Dans un diagramme de cas d'utilisation, les éléments principaux sont :
+                
+                1.Acteurs: Ils représentent les rôles qui interagissent avec le système. Les acteurs peuvent être des personnes, d'autres systèmes ou des entités externes ayant une sorte d'interaction avec le système.
+                
+                2.Cas d'Utilisation: Ils représentent les différentes fonctions ou actions que le système peut effectuer en réponse aux demandes des acteurs. Chaque cas d'utilisation décrit une interaction spécifique entre un acteur et le système.
+                
+                3.Relations: Les relations entre acteurs et cas d'utilisation représentent les interactions entre eux. Par exemple, un acteur peut être associé à plusieurs cas d'utilisation s'il participe à différentes fonctions du système.
+                
+                Les diagrammes de cas d'utilisation sont particulièrement utiles aux premières étapes du développement logiciel pour comprendre et visualiser les exigences du système du point de vue de l'utilisateur. Ils aident à identifier les différents acteurs et les interactions entre eux, ce qui est essentiel pour définir les exigences du système de manière compréhensible pour les parties prenantes du projet. Ces diagrammes fournissent également une base solide pour la conception et la mise en œuvre ultérieures du système.</p>
             </div>
-                <img class="photo-text" src="img/DC.png" alt="Diagramme-classe">
+                <img class="photo-text" src="img/UML_use_case_example-800x707.png" alt="Diagramme-classe">
         </div>
         <div class="container-text">
             <div class="text">
-            <h3>Diagramme d'activités</h3>
-            <p>Ce diagramme fonctionne en montrant une vue complète ou partielle de la formation du système modélisé à un moment donné. L’objectif de ce diagramme est centré sur un ensemble particulier d’objets et d’attributs, et les liens qui y sont liés.
+            <h3>Diagramme d'état de transition</h3>
+            <p>Le diagramme d'état de transition représente le comportement dynamique d'un objet à travers les différents états dans lesquels il peut se trouver et comment il peut passer d'un état à un autre en réponse à certains événements. Ces diagrammes sont particulièrement utiles pour modéliser des systèmes dont les comportements varient en réponse à des événements spécifiques.
 
-                Le diagramme d’objets est quelque peu identique au diagramme de classes car les deux peuvent être utilisés pour visualiser la structure spécifique d’un système. Cependant, le diagramme d’objets montre souvent des instances des classes, tandis que les classes sont ce que le diagramme de classes est censé faire.</p>
+                Les éléments principaux d'un diagramme d'état de transition comprennent :
+                
+                État : Un état représente une situation spécifique dans la vie de l'objet, pendant laquelle l'objet se comporte d'une manière particulière et répond à des événements de manière spécifique.
+                
+                Transitions : Les transitions indiquent comment et quand un objet passe d'un état à un autre. Ces transitions sont étiquetées avec des événements qui déclenchent le changement d'état. Elles peuvent également être associées à des actions qui se produisent pendant la transition.
+                
+                Événements : Les événements sont des événements qui peuvent se produire et déclencher une transition d'un état à un autre. Ils peuvent être déclenchés par diverses sources, telles que les actions de l'utilisateur, les minuteries ou les changements dans les conditions du système.
+                
+                Actions : Les actions sont des actions spécifiques qui se produisent lorsque qu'une transition est effectuée. Ces actions peuvent inclure des changements dans les variables, des appels de méthodes ou d'autres opérations.</p>
             </div>
-                <img class="photo-text" src="img/activity-diagram-for-login-UML-650x797.png" alt="Diagramme-classe">
+                <img class="photo-text" src="img/uml-diagramme-d-etats-transitions10-l.jpg" alt="Diagramme-classe">
         </div>
         <div class="container-text">
             <div class="text">
-            <h3>Diagramme de classe</h3>
-            <p>Ce type d’exemples de diagrammes UML est souvent appelé le fondement principal de toute solution orientée objet. Son utilisation est pour la modélisation conceptuelle de la structure réelle du système et la modélisation détaillée. Il est également possible avec les diagrammes de classes de faire de la modélisation des données.
-
-                Dans ce diagramme, les classes sont divisées en trois compartiments contenus dans une boîte. Le nom doit être en haut, suivi des attributs au milieu et des opérations en bas.</p>
+            <h3>Diagramme d'interaction</h3>
+            <p>Est utilisé pour visualiser les interactions dynamiques entre différents objets ou composants dans un système. Ces diagrammes montrent comment les objets collaborent pour atteindre un comportement spécifique du système.</p>
             </div>
-                <img class="photo-text" src="img/DC.png" alt="Diagramme-classe">
+                <img class="photo-text" src="img/R.jpg" alt="Diagramme-classe">
         </div>
         <div class="container-text">
             <div class="text">
-            <h3>Diagramme de classe</h3>
-            <p>Ce type d’exemples de diagrammes UML est souvent appelé le fondement principal de toute solution orientée objet. Son utilisation est pour la modélisation conceptuelle de la structure réelle du système et la modélisation détaillée. Il est également possible avec les diagrammes de classes de faire de la modélisation des données.
-
-                Dans ce diagramme, les classes sont divisées en trois compartiments contenus dans une boîte. Le nom doit être en haut, suivi des attributs au milieu et des opérations en bas.</p>
+            <h3>Diagramme de séquence</h3>
+            <p>Ce type de diagramme d'interaction montre comment les objets interagissent entre eux et dans quel ordre. Il se concentre sur la séquence des messages échangés entre les objets, représentant comment les objets répondent à ces messages au fil du temps. Les diagrammes de séquence sont particulièrement utiles pour modéliser des scénarios de cas d'utilisation.</p>
             </div>
-                <img class="photo-text" src="img/DC.png" alt="Diagramme-classe">
+                <img class="photo-text" src="img/Login-Module--UML-Sequence-Diagram-.jpg" alt="Diagramme-classe">
         </div>
         <div class="container-text">
             <div class="text">
-            <h3>Diagramme de classe</h3>
-            <p>Ce type d’exemples de diagrammes UML est souvent appelé le fondement principal de toute solution orientée objet. Son utilisation est pour la modélisation conceptuelle de la structure réelle du système et la modélisation détaillée. Il est également possible avec les diagrammes de classes de faire de la modélisation des données.
+            <h3>Diagramme de communication</h3>
+            <p>Est un type de diagramme d'interaction en UML qui montre les interactions entre les objets ou les parties d'un système. Il est utilisé pour visualiser comment les objets se communiquent entre eux et comment ils échangent des messages pour atteindre certaines fonctionnalités à l'intérieur du système.
 
-                Dans ce diagramme, les classes sont divisées en trois compartiments contenus dans une boîte. Le nom doit être en haut, suivi des attributs au milieu et des opérations en bas.</p>
+                Les éléments clés d'un diagramme de communication comprennent :
+
+                Participants,
+                Messages,
+                Associations,
+                Rôles.
+               </p>
             </div>
-                <img class="photo-text" src="img/DC.png" alt="Diagramme-classe">
+                <img class="photo-text" src="img/communication-diagram-overview.webp" alt="Diagramme-classe">
+        </div>
+        <div class="container-text">
+            <div class="text">
+            <h3>Diagramme de temps</h3>
+            <p>Les diagrammes temporels sont des diagrammes d'interaction UML utilisés pour montrer les interactions lorsque l'objectif principal du diagramme est de raisonner sur le temps. Ils se concentrent sur les conditions qui changent au sein et entre les lignes de vie le long d'un axe temporel linéaire. Les diagrammes temporels décrivent le comportement des classificateurs individuels et des interactions entre classificateurs, en mettant l'accent sur la chronologie des événements qui provoquent des changements dans les conditions des lignes de vie modélisées.
+                Le passage d'un état à un autre est représenté par un changement dans le niveau de la ligne de vie. Pendant la période où l'objet se trouve dans un état donné, la ligne de temps est parallèle à cet état. Un changement d'état se traduit par un changement vertical d'un niveau à l'autre. La cause du changement, comme c'est le cas dans un diagramme d'état ou de séquence, est la réception d'un message, un événement qui provoque un changement, une condition au sein du système, ou même simplement le passage du temps.
+               </p>
+            </div>
+                <img class="photo-text" src="img/uml-timing-diagram.png" alt="Diagramme-classe">
         </div>
 
     </section>
