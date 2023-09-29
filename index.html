@@ -64,33 +64,72 @@
             <div class="container-button">
             <div class="text">
             <h3>Diagrammes d'objets</h3>
-            <p>Les diagrammes d’activité UML forment un sous-ensemble essentiel des diagrammes de comportement. Ils présentent le fonctionnement de différentes activités et des flux dans les processus métier et les systèmes logiciels. Grâce à des symboles UML spécifiques, vous pouvez représenter le point de départ, le point d’arrivée, ainsi que toutes les fusions et interactions de votre flux de processus.
-                Un grand nombre des activités que les gens souhaitent accomplir en ligne – vérifier leurs e-mails, gérer leur argent, commander des vêtements, etc. – exigent de se connecter à un site web. Ce diagramme d'activités montre le processus de connexion à un site web, de la saisie d'un nom d'utilisateur et d'un mot de passe à la connexion établie au système. Il utilise différentes formes de conteneurs pour les activités, les décisions et les notes
+            <p>Un diagramme d'objets UML représente une instance spécifique d'un diagramme de classes à un moment précis. Dans sa représentation visuelle, il est très similaire à un diagramme de classes.
+
+                Un diagramme d'objets se concentre sur les attributs d'un ensemble d'objets et sur la façon dont ils interagissent les uns avec les autres. Par exemple, dans le diagramme d'objets ci-dessous, les trois comptes en banque sont reliés à la banque elle-même. Les titres de classes indiquent le type de compte (épargne, courant ou carte de crédit) qu'un client donné peut avoir dans cette banque. Les attributs de classes sont différents pour chaque type de compte. Ainsi, l'objet carte de crédit dispose d'une limite de crédit, alors que les comptes d'épargne et courant disposent de taux d'intérêt. 
+                Les cas d'utilisation des diagrammes d’objets ne se limitent pas aux services bancaires. Vous pouvez facilement réaliser un diagramme d’objets pour des arbres généalogiques, les services d'une entreprise ou tout autre système dont les parties sont reliées les unes aux autres.
             </p>
             <button>
             <a href="elements-diagramme-objet.html" target="_blank">Éléments du diagramme d'objets</a>
         </button>
         </div>
             </div>
-                <img class="photo-text" src="img/activity-diagram-for-login-UML-650x797.png" alt="Diagramme-classe">
+                <img class="photo-text" src="img/Object-Diagram-Example-4-750x400@2x.png" alt="Diagramme-classe">
         </div>
         <div class="container-text">
             <div class="text">
-            <h3>Diagramme de classe</h3>
-            <p>Ce type d’exemples de diagrammes UML est souvent appelé le fondement principal de toute solution orientée objet. Son utilisation est pour la modélisation conceptuelle de la structure réelle du système et la modélisation détaillée. Il est également possible avec les diagrammes de classes de faire de la modélisation des données.
+            <h3>Diagramme de paquetage</h3>
+            <p>Le diagramme de paquetage, une sorte de diagramme structurel, montre la disposition et l'organisation des éléments du modèle dans un projet de moyenne ou grande envergure. Le diagramme de paquetage peut montrer à la fois la structure et les dépendances entre les sous-systèmes ou les modules, montrant différentes vues d'un système, par exemple comme une application multicouche (également connue sous le nom de multi-tier) : modèle d'application multi-tier.
 
-                Dans ce diagramme, les classes sont divisées en trois compartiments contenus dans une boîte. Le nom doit être en haut, suivi des attributs au milieu et des opérations en bas.</p>
+
+                Le diagramme de paquetage en un coup d'œil
+                
+                
+                Le diagramme de paquetage est utilisé pour simplifier les diagrammes de classes complexes, il permet de regrouper les classes en paquetages. Un package est une collection d'éléments UML logiquement liés.
+                
+                
+                Le diagramme suivant est un modèle d'entreprise dans lequel les classes sont regroupées en packages :
+                
+                
+                Les packages apparaissent sous la forme de rectangles avec de petits onglets en haut.
+                Le nom du paquetage figure sur l'onglet ou à l'intérieur du rectangle.
+                Les flèches en pointillé représentent les dépendances.
+                Un paquet dépend d'un autre si des changements dans l'autre peuvent entraîner des changements dans le premier.</p>
             </div>
-                <img class="photo-text" src="img/DC.png" alt="Diagramme-classe">
+                <img class="photo-text" src="img/paquetage-diagram.png" alt="Diagramme-classe">
         </div>
         <div class="container-text">
             <div class="text">
-            <h3>Diagramme de classe</h3>
-            <p>Ce type d’exemples de diagrammes UML est souvent appelé le fondement principal de toute solution orientée objet. Son utilisation est pour la modélisation conceptuelle de la structure réelle du système et la modélisation détaillée. Il est également possible avec les diagrammes de classes de faire de la modélisation des données.
+            <h3>Diagramme de déploiement</h3>
+            <p>Le diagramme de déploiement est utilisé pour visualiser l'architecture physique d'un système. Ce type de diagramme montre comment les composants logiciels et matériels d'un système sont configurés et connectés, ainsi que leur déploiement sur des nœuds physiques tels que des serveurs et des dispositifs de stockage.
 
-                Dans ce diagramme, les classes sont divisées en trois compartiments contenus dans une boîte. Le nom doit être en haut, suivi des attributs au milieu et des opérations en bas.</p>
+                Le diagramme de déploiement représente les nœuds physiques et les connexions entre eux, montrant comment les composants du système, tels que les applications et les bases de données, sont mis en œuvre sur ces nœuds physiques. Les nœuds physiques peuvent inclure des serveurs, des ordinateurs personnels, des appareils mobiles et d'autres périphériques matériels.
+                
+                Ce type de diagramme est utile pour comprendre comment les composants d'un système sont répartis dans l'infrastructure physique, ce qui est essentiel pour la planification matérielle et la configuration du réseau dans le cadre d'applications d'entreprise complexes.
+                
+                En résumé, le diagramme de déploiement offre une vue visuelle de la manière dont les composants d'un système interagissent et sont déployés dans l'infrastructure physique du monde réel.</p>
             </div>
-                <img class="photo-text" src="img/DC.png" alt="Diagramme-classe">
+                <img class="photo-text" src="img/deployment_diagram_real_estate-700x573.png" alt="Diagramme-classe">
+        </div>
+        <div class="container-text">
+            <div class="text">
+            <h3>Diagramme de structure composite</h3>
+            <p> Structure composite est un type de diagramme UML qui montre la structure interne d'une classe ou d'un composant complexe, y compris la manière dont ses parties internes sont composées et interagissent. Ce type de diagramme est utilisé pour modéliser des systèmes complexes où les composants internes ont leur propre structure et peuvent interagir entre eux.
+
+                Dans un diagramme de structure composite, les éléments sont représentés sous forme de parties, de connecteurs et de ports. Ces éléments sont utilisés de la manière suivante :
+                
+                Parties : Elles représentent les parties internes de la structure composite. Chaque partie peut être une autre structure composite ou une classe simple. Par exemple, dans un système de voiture, le moteur et les roues pourraient être des parties de la structure composite "Voiture".
+                
+                Connecteurs : Ils indiquent les relations entre les parties. Ils peuvent représenter des associations, des compositions, des agrégations, etc. Les connecteurs montrent comment les parties sont reliées entre elles et comment elles communiquent.
+                
+                Ports : Les ports sont des points d'accès à une structure composite depuis l'extérieur. Ils permettent à d'autres structures ou composants de se connecter et de communiquer avec la structure composite.
+                
+                Un exemple courant pour comprendre les diagrammes de structure composite est un système informatique. Imaginez un ordinateur comme une structure composite. Le processeur, la mémoire, le disque dur, etc., sont des parties de cette structure. Les connecteurs entre ces parties pourraient représenter le bus système ou les connexions réseau. Les ports pourraient être des interfaces USB, HDMI, etc., qui permettent la connexion à des périphériques externes.
+                
+                En résumé, un diagramme de structure composite permet de visualiser la manière dont les parties d'une structure complexe sont organisées et interagissent les unes avec les autres.
+            </p>
+            </div>
+                <img class="photo-text" src="img/UML-composite-structure-diagram@2x.png" alt="Diagramme-classe">
         </div>
     </section>
     <section id="Diagrammes comportementaux">

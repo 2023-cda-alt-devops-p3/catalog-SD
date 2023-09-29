@@ -44,3 +44,26 @@ p {
     border: 2.5px solid rgb(196, 162, 9);
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
+#btn-back{
+    background-color:darkgoldenrod;
+    text-decoration: none;
+    width: 90px;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+    position: absolute;
+    right: 20px;
+    color: white;
+    
+}
+#btn-back:hover {
+    background-color: #2980b9;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+  }

@@ -140,7 +140,12 @@ button a {
     height: auto;
     border-radius: 10px;
     border: 1.5px solid rgb(196, 162, 9);
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2)
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: transform 0.2s ease;
+ }
+ .photo-text:hover {
+    transform: scale(1.2);
  }
  footer {
     width: 100%;
