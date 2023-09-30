@@ -229,40 +229,61 @@
         </div>
         <div class="container-text">
             <div class="text">
-            <h3>Diagramme d'objet</h3>
-            <p>Ce diagramme fonctionne en montrant une vue complète ou partielle de la formation du système modélisé à un moment donné. L’objectif de ce diagramme est centré sur un ensemble particulier d’objets et d’attributs, et les liens qui y sont liés.
+            <h3>Modèle Conceptuel de Traitements (MCT)</h3>
+            <p>Le MCT est utilisé pour modéliser les exigences de traitement d'un système d'information. Il s'agit d'un modèle conceptuel qui montre les différents processus ou fonctions impliqués dans le système, ainsi que les flux de données et les transformations entre eux. Le MCT est utilisé pour identifier les exigences de traitement du système et pour concevoir les fonctions de traitement et les algorithmes qui seront utilisés pour transformer les données.
 
-                Le diagramme d’objets est quelque peu identique au diagramme de classes car les deux peuvent être utilisés pour visualiser la structure spécifique d’un système. Cependant, le diagramme d’objets montre souvent des instances des classes, tandis que les classes sont ce que le diagramme de classes est censé faire.</p>
+                Voici quelques caractéristiques clés du MCT :
+                met l'accent sur les exigences de traitement du système,
+                représente formellement les activités exercées par le domaine,
+                repose sur la prise en compte des échanges (flux) du domaine avec son environnement,
+                s'effectue en faisant abstraction de l'organsiation et des choix technologiques</p>
             </div>
-                <img class="photo-text" src="img/DC.png" alt="Diagramme-classe">
+                <img class="photo-text" src="img/mod-le-conceptuel-des-traitements-mct-l.jpg" alt="Diagramme-classe">
         </div>
         <div class="container-text">
             <div class="text">
-            <h3>Diagramme de classe</h3>
-            <p>Ce type d’exemples de diagrammes UML est souvent appelé le fondement principal de toute solution orientée objet. Son utilisation est pour la modélisation conceptuelle de la structure réelle du système et la modélisation détaillée. Il est également possible avec les diagrammes de classes de faire de la modélisation des données.
+            <h3>Modèle Logique des Données (MLD)</h3>
+            <p> Le Modèle Logique des Données (MLD) fait référence à un modèle de données qui décrit la structure des données, les relations entre les données et les contraintes d'intégrité dans une base de données d'une manière indépendante du système de gestion de base de données spécifique utilisé. Le MLD se situe entre le "Modèle Conceptuel de Données" (MCD), qui représente les concepts métier, et le "Modèle Physique de Données" (MPD), qui décrit comment les données sont stockées réellement dans la base de données.
 
-                Dans ce diagramme, les classes sont divisées en trois compartiments contenus dans une boîte. Le nom doit être en haut, suivi des attributs au milieu et des opérations en bas.</p>
+                Dans le processus de conception de bases de données, le MLD est créé après le MCD. Il traduit les concepts métier en une structure de base de données concrète, en spécifiant les tables, les colonnes, les clés primaires, les clés étrangères et les autres contraintes nécessaires pour représenter efficacement les données dans un système informatique. Le MLD fournit une vue détaillée des données et de leurs relations, facilitant ainsi le développement ultérieur de la base de données.</p>
             </div>
-                <img class="photo-text" src="img/DC.png" alt="Diagramme-classe">
+                <img class="photo-text" src="img/R (1).png" alt="Diagramme-classe">
         </div>
         <div class="container-text">
             <div class="text">
-            <h3>Diagramme de classe</h3>
-            <p>Ce type d’exemples de diagrammes UML est souvent appelé le fondement principal de toute solution orientée objet. Son utilisation est pour la modélisation conceptuelle de la structure réelle du système et la modélisation détaillée. Il est également possible avec les diagrammes de classes de faire de la modélisation des données.
-
-                Dans ce diagramme, les classes sont divisées en trois compartiments contenus dans une boîte. Le nom doit être en haut, suivi des attributs au milieu et des opérations en bas.</p>
+            <h3>Modèle logique de traitement (MLT)</h3>
+            <p>Le modèle logique de traitement se préoccupe d’une vision interne des moyens que l’informaticien va utiliser pour construire le logiciel correspondant aux activités informatisées définit dans le MOT.
+                Ce modèle logique de traitement MLT doit spécifier avec rigueur et en détail des contenues des traitements informatisés associes a chaque taches organisationnelle.
+                Le MLT décrit les différentes étapes du traitement des données, les règles métier, les flux d'informations et les opérations qui seront effectuées sur les données. Il fournit une vision logique et structurée des activités du système.
+            </p>
             </div>
-                <img class="photo-text" src="img/DC.png" alt="Diagramme-classe">
+                <img class="photo-text" src="img/Figure-36-CONCEPTION-D’UN-SYSTEME-INFORMATISE-DE-RESERVATION-DES-CHAMBRES-DANS-UN-HOTEL-Cas-de-PEACE-HOTEL-Goma.jpg" alt="Diagramme-classe">
         </div>
         <div class="container-text">
             <div class="text">
-            <h3>Diagramme de classe</h3>
-            <p>Ce type d’exemples de diagrammes UML est souvent appelé le fondement principal de toute solution orientée objet. Son utilisation est pour la modélisation conceptuelle de la structure réelle du système et la modélisation détaillée. Il est également possible avec les diagrammes de classes de faire de la modélisation des données.
+            <h3>Modèle Physique des Données(MPD)</h3>
+            <p> Il fait référence à la représentation concrète et technique de la structure de données d'une base de données et ainsi de mieux comprendre les relations entre les différents tables. Il permet d'avoir un point de vue global sur l'ensemble de la base de données. Le MPD spécifie comment les données seront stockées, organisées et manipulées dans le système de gestion de base de données (SGBD) choisi.
 
-                Dans ce diagramme, les classes sont divisées en trois compartiments contenus dans une boîte. Le nom doit être en haut, suivi des attributs au milieu et des opérations en bas.</p>
+                Dans le processus de conception de bases de données, le MPD est créé après le "Modèle Logique des Données" (MLD) et avant la mise en œuvre réelle de la base de données. Il prend en compte les caractéristiques spécifiques du SGBD, telles que les types de données, les index, les clés étrangères, les contraintes d'intégrité, etc. Le MPD est généralement très détaillé et fournit des instructions précises pour la création de la base de données physique.
+                
+                Le Modèle Physique des Données représente la structure de données concrète qui sera mise en place dans la base de données réelle, prenant en compte les exigences techniques et les caractéristiques du système de gestion de base de données utilisé.
+               </p>
             </div>
-                <img class="photo-text" src="img/DC.png" alt="Diagramme-classe">
+                <img class="photo-text" src="img/R (2).png" alt="Diagramme-classe">
         </div>
+        <div class="container-text">
+            <div class="text">
+            <h3>Modèle Physique de traitement(MPT)</h3>
+            <p> Le MPT représente la manière dont les processus et les procédures du système d'information seront mis en œuvre dans un environnement d'exécution, tel qu'un système informatique ou une application.
+
+                Le MPT se concentre sur les détails techniques et les aspects de la mise en œuvre, tels que la structure du code source, les algorithmes utilisés, les interfaces utilisateur et les autres composants techniques du système. Il s'agit d'une phase importante dans le développement du système, car elle fournit des conseils détaillés aux développeurs sur la manière de mettre en œuvre les fonctionnalités du système d'information.
+                
+                 Le MPT est une représentation détaillée de la manière dont les opérations et les processus du système seront réalisés dans un environnement d'exécution réel. Il s'agit d'un élément essentiel du processus de développement de logiciels dans le cadre de Merise.
+               </p>
+            </div>
+                <!-- <img class="photo-text" src="img/R (2).png" alt="Diagramme-classe"> -->
+        </div>
+
 
     </section>
     
