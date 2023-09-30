@@ -1,24 +1,39 @@
-let toggle= document.querySelector('.toggle');
-let body= document.querySelector('body');
+let toggleMenu = document.querySelector(".toggle")
+let btnBack = document.getElementById("btn-back")
+let nav = document.querySelector("nav")
 
-toggle.addEventListener('click', () => {
-    App.toggleMenu();
-} );
+// console.log(toggle,btnBack);
 
-let App= {
-    toggleMenu:() => {
-        body.classList.toggle('open');
-    },
-    listenMenu:() => {
-        let menuItems= document.getElementsByClassName('menu')[0].querySelectorAll('li');
-        console.log('item', menuItems);
-        menuItems.forEach((item, i)=> {
-            item.addEventListener('click', () => {
-                console.log('click');
-                App.toggleMenu();
-            } );
+let App = {
+  toggleMenu: () => {
+    nav.classList.toggle("open")
+  },
+  listenMenu: () => {
+    let menuItems = document
+      .getElementsByClassName("menu")[0]
+      .querySelectorAll("a")
+    console.log("item", menuItems)
+    menuItems.forEach((item, i) => {
+      console.log(item.getAttribute("href"))
+      if (item.getAttribute("href") !== "#Diagrammes") {
+        item.addEventListener("click", () => {
+          console.log("click")
+          App.toggleMenu()
         })
-    }
-};
+      }
+    })
+  },
+}
 
-App.listenMenu();
+if (toggleMenu) {
+  toggleMenu.addEventListener("click", () => {
+    App.toggleMenu()
+  })
+  App.listenMenu()
+}
+
+if (btnBack) {
+  btnBack.addEventListener("click", () => {
+    history.back()
+  })
+}
